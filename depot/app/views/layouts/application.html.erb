@@ -9,22 +9,34 @@
   <%= csrf_meta_tags %>
 </head>
 
+
 <body class='<%= controller.controller_name %>'>
+
   <div id="banner">
     <%= image_tag("logo.png") %>
     <%= @page_title || "Pragmatic Bookshelf" %>
   </div>
+
   <div id="columns">
     <div id="side">
+
       <ul>
         <li><a href="http://www...">Home</a></li>
         <li><a href="http://www.../faq">Questions</a></li>
         <li><a href="http://www.../news">News</a></li>
         <li><a href="http://www.../contact">Contact</a></li>
       </ul>
+
       <p>
-        It is now <%= Time.now %>
+        Current Time &amp Date:<br>
+        <%= Time.now.strftime("%B %d, %Y") %><br>
+        <%= Time.now.strftime("%H:%M:%S") %><br>
       </p>
+
+      <div id="cart">
+        <%= render @cart %>
+      </div>
+
     </div>
     <div id="main">
       <%= yield %>
