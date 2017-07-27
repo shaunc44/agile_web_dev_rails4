@@ -11,12 +11,12 @@ Depot::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   config.action_mailer.smtp_settings = {
-    address:              "smtp.live.com",
+    address:              "smtp.gmail.com",
     port:                 "587",
-    domain:               "mail.live.com",
+    domain:               "gmail.com",
     authentication:       "plain",
-    user_name:            "seyyes2000",
-    password:             "secret", #how to add secret password here, encrypt like in python?
+    user_name:            ENV["gmail_user_name"],
+    password:             ENV["gmail_password"],
     enable_starttls_auto: true
   }
 end
