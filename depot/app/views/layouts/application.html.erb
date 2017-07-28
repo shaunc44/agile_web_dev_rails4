@@ -15,24 +15,19 @@
 
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %>
+    <%= @page_title || t('.title') %>
   </div>
 
 
   <div id="columns">
 
     <div id="side">
-      <% if @cart %>
-        <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %> 
-          <%= render @cart %>
-        <% end %>
-      <% end %>
 
       <ul>
-        <li><a href="http://www...">Home</a></li>
-        <li><a href="http://www.../faq">Questions</a></li>
-        <li><a href="http://www.../news">News</a></li>
-        <li><a href="http://www.../contact">Contact</a></li>
+        <li><a href="http://www..."><%= t('.home') %></a></li>
+        <li><a href="http://www.../faq"><%= t('.questions') %></a></li>
+        <li><a href="http://www.../news"><%= t('.news') %></a></li>
+        <li><a href="http://www.../contact"><%= t('.contact') %></a></li>
       </ul>
 
       <p>
@@ -40,6 +35,12 @@
         <%= Time.now.strftime("%B %d, %Y") %><br>
         <%= Time.now.strftime("%H:%M:%S") %><br>
       </p>
+
+      <% if @cart %>
+        <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %> 
+          <%= render @cart %>
+        <% end %>
+      <% end %>
 
       <% if session[:user_id] %>
         <ul>
