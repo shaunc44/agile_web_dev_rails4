@@ -7,17 +7,18 @@
   <%= form_tag do %>
     <fieldset>
       <legend>Please Log In</legend>
-      <div>
+      <div style="display: table">
         <%= label_tag :name, 'Name:' %>
-        <%= text_field_tag :name, params[:name] %>
+        <%= text_field_tag :name, params[:name] %><br>
       </div>
-      <div>
+      <div style="display: inline-block;">
         <%= label_tag :password, 'Password:' %>
-        <%= password_field_tag :password, params[:password] %>
+        <%= password_field_tag :password, params[:password] %><br>
       </div>
-      <div>
+      <div style="display: block; margin-left: 5.1em;">
         <%= submit_tag "Login" %>
       </div>
     </fieldset>
   <% end %>
 </div>
+
