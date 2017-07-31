@@ -54,6 +54,12 @@ en:
       questions:   "Questions"
       news:        "News"
       contact:     "Contact"
+      date_title:  "Current Date & Time:"
+      date:
+        formats:
+          default: "%B %d, %Y"
+
+      # <%= Time.now.strftime("%B %d, %Y") %><br>
 
   carts:
     cart:

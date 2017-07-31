@@ -37,6 +37,8 @@ es:
       questions:   "Preguntas"
       news:        "Noticias"
       contact:     "Contacto"
+      date_title:    "Fecha y Hora:"
+      date:          
 
   carts:
     cart:

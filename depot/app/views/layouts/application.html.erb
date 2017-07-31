@@ -39,8 +39,8 @@
       </ul>
 
       <p>
-        Current Date &amp Time:<br>
-        <%= Time.now.strftime("%B %d, %Y") %><br>
+        <%= t('.date_title') %><br>
+        <%= l(Time.now, formats: :default) %><br>
         <%= Time.now.strftime("%H:%M:%S") %><br>
       </p>
 
