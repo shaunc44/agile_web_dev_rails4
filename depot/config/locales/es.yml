@@ -37,8 +37,43 @@ es:
       questions:   "Preguntas"
       news:        "Noticias"
       contact:     "Contacto"
-      date_title:    "Fecha y Hora:"
-      date:          
+      date_title:  "Fecha y Hora:"
+
+  # date:
+  #   formats:
+  #     own:     "%A %d de %B de %Y"
+  date:
+    day_names:
+    - domingo
+    - lunes
+    - martes
+    - miércoles
+    - jueves
+    - viernes
+    - sábado
+    formats:
+      default:  "%-d/%-m/%Y"
+      long:     "%-d de %B de %Y"
+      short:    "%-d de %b"
+      own_date:      "El %A %d de %B de %Y"
+    month_names:
+    -
+    - enero
+    - febrero
+    - marzo
+    - abril
+    - mayo
+    - junio
+    - julio
+    - agosto
+    - septiembre
+    - octubre
+    - noviembre
+    - diciembre
+
+  time:
+    formats:
+      own_time: "%H:%M:%S"
 
   carts:
     cart:

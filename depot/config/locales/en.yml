@@ -55,11 +55,42 @@ en:
       news:        "News"
       contact:     "Contact"
       date_title:  "Current Date & Time:"
-      date:
-        formats:
-          default: "%B %d, %Y"
 
-      # <%= Time.now.strftime("%B %d, %Y") %><br>
+  # date:
+  #   formats:
+  #     own:     "%A, %B %d, %Y"
+  date:
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default:  "%Y-%m-%d"
+      long:     "%B %d, %Y"
+      short:    "%b %d"
+      own_date:      "%A, %B %d, %Y"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+
+  time:
+    formats:
+      own_time: "%r"
 
   carts:
     cart:

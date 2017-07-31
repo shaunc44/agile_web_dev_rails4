@@ -32,16 +32,28 @@
     <div id="side">
 
       <ul>
-        <li><a href="http://www..."><%= t('.home') %></a></li>
-        <li><a href="http://www.../faq"><%= t('.questions') %></a></li>
-        <li><a href="http://www.../news"><%= t('.news') %></a></li>
-        <li><a href="http://www.../contact"><%= t('.contact') %></a></li>
+        <li>
+          <a href="localhost:3000">
+          <%= t('.home') %></a>
+        </li>
+        <li>
+          <a href="http://www.../faq">
+          <%= t('.questions') %></a>
+        </li>
+        <li>
+          <a href="http://www.../news">
+          <%= t('.news') %></a>
+        </li>
+        <li>
+          <a href="https://github.com/shaunc44/agile_web_dev_rails4">
+          <%= t('.contact') %></a>
+        </li>
       </ul>
 
       <p>
         <%= t('.date_title') %><br>
-        <%= l(Time.now, formats: :default) %><br>
-        <%= Time.now.strftime("%H:%M:%S") %><br>
+        <%= l(Date.today, format: :own_date) %><br>
+        <%= l(Time.now, format: :own_time) %><br>
       </p>
 
       <% if @cart %>
