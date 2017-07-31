@@ -39,9 +39,6 @@ es:
       contact:     "Contacto"
       date_title:  "Fecha y Hora:"
 
-  # date:
-  #   formats:
-  #     own:     "%A %d de %B de %Y"
   date:
     day_names:
     - domingo
@@ -52,10 +49,10 @@ es:
     - viernes
     - sábado
     formats:
-      default:  "%-d/%-m/%Y"
-      long:     "%-d de %B de %Y"
-      short:    "%-d de %b"
-      own_date:      "El %A %d de %B de %Y"
+      default:    "%-d/%-m/%Y"
+      long:       "%-d de %B de %Y"
+      short:      "%-d de %b"
+      own_date:   "El %A %d de %B de %Y"
     month_names:
     -
     - enero
@@ -95,6 +92,10 @@ es:
       email:            "E-mail"
       pay_type:         "Forma de pago"
       pay_prompt_html:  "Seleccione un m&eacute;todo de pago"
+      payment_type:
+        - Cuenta
+        - Tarjeta de crédito
+        - Orden de compra
       submit:           "Realizar Pedido"
 
   thanks:               "Gracias por su pedido"

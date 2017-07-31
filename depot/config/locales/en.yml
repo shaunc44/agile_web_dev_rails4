@@ -42,10 +42,10 @@ en:
 
   errors:
     template:
-      body:    "There were problems with the following fields:"
+      body:        "There were problems with the following fields:"
       header:
-        one:   "1 error prohibited this %{model} from being saved"
-        other: "%{count} errors prohibited this %{model} from being saved"
+        one:       "1 error prohibited this %{model} from being saved"
+        other:     "%{count} errors prohibited this %{model} from being saved"
 
   layouts:
     application:
@@ -69,10 +69,10 @@ en:
     - Friday
     - Saturday
     formats:
-      default:  "%Y-%m-%d"
-      long:     "%B %d, %Y"
-      short:    "%b %d"
-      own_date:      "%A, %B %d, %Y"
+      default:     "%Y-%m-%d"
+      long:        "%B %d, %Y"
+      short:       "%b %d"
+      own_date:    "%A, %B %d, %Y"
     month_names:
     - 
     - January
@@ -94,14 +94,14 @@ en:
 
   carts:
     cart:
-      title:       "Your Cart"
-      empty:       "Empty cart"
-      checkout:    "Checkout"
+      title:            "Your Cart"
+      empty:            "Empty cart"
+      checkout:         "Checkout"
 
   store:
     index:
-      title_html:  "Your Pragmatic Catalog"
-      add_html:    "Add to Cart"
+      title_html:       "Your Pragmatic Catalog"
+      add_html:         "Add to Cart"
 
   orders:
     new:
@@ -112,6 +112,10 @@ en:
       email:            "E-mail"
       pay_type:         "Pay with"
       pay_prompt_html:  "Select a payment method"
+      payment_type:
+        - Check
+        - Credit card
+        - Purchase order
       submit:           "Place Order"
 
   thanks:               "Thank you for your order"
